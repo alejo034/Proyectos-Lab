@@ -29,11 +29,12 @@ esVocal x =  (x == 'a') || (x == 'e') || (x=='i')  || (x=='o') || (x == 'u')
 -- x == False = False
 -- x == True = paratodo xs
  
-paratodo :: [Bool] -> Bool 
-paratodo [] = True
-paratodo (x:xs)
-               | x == False = False
-               | otherwise = paratodo xs
+paraTodo :: [Bool] -> Bool
+paraTodo [] = True
+paraTodo (x:xs)
+        | x == True = paraTodo xs
+        | x == False = False
+
 
 
 
