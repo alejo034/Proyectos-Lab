@@ -75,18 +75,19 @@ pertenece n (x:xs) |x == n = True
                    |x /= n = pertenece n xs
 
 
---4a)
---Reemplazamos el caracter ' en el nombre de la función por "1"
---paratodo1 :: [a] -> (a -> Bool) -> Bool
---paratodo1 [] y = True
---paratodo1 (x:xs) t | t x == True = True && paratodo1 xs t
---                   | otherwise = False
- 
+{-4a)
+ Reemplazamos el caracter ' en el nombre de la función por "1". 
+ Funcion paratodo que dada una lista xs de tipo [a] y un
+predicado t :: a -> Bool, determina si todos los elementos de xs satisfacen el
+predicado t. 
+Verificamos la funcion utilizando de predicado alguna otra ya definida como por ejemplo esCero-}
 
 paratodo1 :: [a] -> (a -> Bool) -> Bool
 paratodo1 [] t = True
 paratodo1 (x:xs) t = t x && paratodo1 xs t
- 
+ {- paratodo1 [1,2,3,4] esCero 
+False -}
+
 --4b) Determina si algun elemento de xs satisface el predicado t.
 
 existe1 :: [a] -> (a -> Bool) -> Bool
