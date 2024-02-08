@@ -19,6 +19,11 @@ esPositivo x = x > 0
 esVocal :: Char -> Bool
 esVocal x =  (x == 'a') || (x == 'e') || (x=='i')  || (x=='o') || (x == 'u')
 
+--1d)
+--valor absoluto
+valorAbsoluto :: Int -> Int
+valorAbsoluto 
+
 
  --2a) (Revisar) que verifica que todos los elementos de una lista
 --sean True
