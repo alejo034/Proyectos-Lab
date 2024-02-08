@@ -22,7 +22,8 @@ esVocal x =  (x == 'a') || (x == 'e') || (x=='i')  || (x=='o') || (x == 'u')
 --1d)
 --valor absoluto
 valorAbsoluto :: Int -> Int
-valorAbsoluto 
+valorAbsoluto x  | x > 0 = x
+                  | otherwise = -x
 
 
  --2a) (Revisar) que verifica que todos los elementos de una lista
