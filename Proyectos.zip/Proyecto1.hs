@@ -144,12 +144,16 @@ cuadrado x = x*x
 sumaCuadrados :: Int -> Int
 sumaCuadrados x = sumatoria1 [0..(x-1)] cuadrado
  
---6d) Reedefinimos la función factorial para evitar usar recursion.
+--6d) que dado en entero n y una lista ls , devuelve True si y solo si, existe alg ́un elemento en ls que divida a na.
+existeDivisor::Int-> [Int] -> Bool
+
+
+Reedefinimos la función factorial para evitar usar recursion.
  
 factorial1 :: Int -> Int
 factorial1 z = productoria1 [1..z] (*1)
 
---6e)
+--6e)es primo
 -- Que calcula el producto de todos los n ́umeros pares de una lista.
 
 filtroPares :: Int -> Int
