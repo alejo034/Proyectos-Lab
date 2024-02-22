@@ -147,12 +147,6 @@ sumaCuadrados x = sumatoria1 [0..(x-1)] cuadrado
 --6d) que dado en entero n y una lista ls , devuelve True si y solo si, existe alg ́un elemento en ls que divida a na.
 existeDivisor::Int-> [Int] -> Bool
 
-
-Reedefinimos la función factorial para evitar usar recursion.
- 
-factorial1 :: Int -> Int
-factorial1 z = productoria1 [1..z] (*1)
-
 --6e)es primo
 -- Que calcula el producto de todos los n ́umeros pares de una lista.
 
@@ -163,6 +157,11 @@ filtroPares x
 
 multiplicaPares :: [Int] -> Int
 multiplicaPares xs = productoria1 xs filtroPares 
+--6f)Reedefinimos la función factorial para evitar usar recursion.
+ 
+factorial1 :: Int -> Int
+factorial1 z = productoria1 [1..z] (*1)
+
 
 --7)
 --- La funcion map toma una funcion y se lo aplica a cada elemento de la lista.
